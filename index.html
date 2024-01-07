@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Amy Boutique</title>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS Animation -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a
+        href="#"
+        class="navbar-logo"
+        >Amy Boutique</a
+      >
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a
+          href="#"
+          id="search-button"
+          ><i data-feather="search"></i
+        ></a>
+        <a
+          href="#"
+          id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a
+          href="#"
+          id="hamburger-menu"
+          ><i data-feather="menu"></i
+        ></a>
+      </div>
+
+      <!-- Search Form -->
+      <div class="search-form">
+        <input
+          type="search"
+          id="search-box"
+          placeholder="search here"
+        />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+
+      <!-- Shopping Cart -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img
+            src="img/G1.jpg"
+            alt="Kemeja Pique"
+          />
+          <div class="item-detail">
+            <h3>Kemeja Piqeu</h3>
+            <div class="item-price">IDR 165K</div>
+          </div>
+          <i
+            data-feather="trash-2"
+            class="remove-item"
+          ></i>
+        </div>
+        <div class="cart-item">
+          <img
+            src="img/G3.jpg"
+            alt="Rok & kardigan "
+          />
+          <div class="item-detail">
+            <h3>Rok & kardigan</h3>
+            <div class="item-price">IDR 330K</div>
+          </div>
+          <i
+            data-feather="trash-2"
+            class="remove-item"
+          ></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      id="home"
+    >
+      <main
+        class="content"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <h1>Amy Boutique</h1>
+        <p>made by any order request || est. 2014</p>
+        <a
+          href="https://wa.me/6281563344345"
+          class="cta"
+          >Buy Now</a
+        >
+      </main>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="about"
+    >
+      <h2
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        About Us
+      </h2>
+
+      <div class="content">
+        <p
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          Boutique ini berdiri sejak tahun 2014, ini adalah bisnis bunda saya sendiri yang dilandasi oleh hobi, disini kami menerima berbagai macam pesanan dikarnakan pemesanan produk yang dilakukan berdasarkan request masing-masing pelanggan.
+        </p>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section
+      id="catalogue"
+      class="catalogue"
+    >
+      <h2
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        Catalogue
+      </h2>
+
+      <div class="row">
+        <div class="catalogue-card">
+          <img
+            src="img/G1.jpg"
+            alt="Kemeja Pique"
+            class="catalogue-card-image"
+            width="250"
+            data-aos="flip-right"
+          />
+          <h3 class="catalogue-card-title">Kemeja Pique</h3>
+          <p class="catalogue-card-price">IDR 165K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img
+            src="img/G2.jpg"
+            alt="Kemeja Motif Wajah"
+            class="catalogue-card-image"
+            width="250"
+            data-aos="flip-right"
+          />
+          <h3 class="catalogue-card-title">Kemeja Motif Wajah</h3>
+          <p class="catalogue-card-price">IDR 165K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img
+            src="img/G3.jpg"
+            alt="Rok & Kardigan"
+            class="catalogue-card-image"
+            width="250"
+            data-aos="flip-right"
+          />
+          <h3 class="catalogue-card-title">Rok & Kardigan</h3>
+          <p class="catalogue-card-price">IDR 330K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img
+            src="img/G4.jpg"
+            alt="Gamis"
+            class="catalogue-card-image"
+            width="250"
+            data-aos="flip-right"
+          />
+          <h3 class="catalogue-card-title">Gamis Daily Kain Jersey</h3>
+          <p class="catalogue-card-price">IDR 200K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section
+      id="review"
+      class="review"
+    >
+      <h2
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        Review
+      </h2>
+      <div class="review-grup">
+        <img
+          src="img/ss1.jpg"
+          alt=""
+          width="450"
+          data-aos="fade-right"
+          data-aos-duration="1450"
+        />
+        <img
+          src="img/ss2.jpg"
+          alt=""
+          width="450"
+          data-aos="fade-right"
+          data-aos-duration="1450"
+        />
+        <img
+          src="img/ss3.jpg"
+          alt=""
+          width="450"
+          data-aos="fade-right"
+          data-aos-duration="1450"
+        />
+        <img
+          src="img/ss4.jpg"
+          alt=""
+          width="450"
+          data-aos="fade-right"
+          data-aos-duration="1450"
+        />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="contact"
+    >
+      <h2
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        Contact Us
+      </h2>
+
+      <form
+        action=""
+        name="Amy-Boutique"
+      >
+        <div class="input-grup">
+          <i data-feather="user"></i>
+          <input
+            type="text"
+            placeholder="Name"
+            name="nama"
+          />
+        </div>
+        <div class="input-grup">
+          <i data-feather="phone"></i>
+          <input
+            type="text"
+            placeholder="Your Phone"
+            name="notelp"
+          />
+        </div>
+        <div class="input-grup">
+          <i data-feather="message-circle"></i>
+          <input
+            type="text"
+            placeholder="Message"
+            name="pesan"
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-kirim"
+        >
+          Send
+        </button>
+        <button
+          type="button"
+          class="btn btn-loading d-none"
+        >
+          Loading..
+        </button>
+      </form>
+      <div
+        class="alert d-none my-alert"
+        role="alert"
+      >
+        <strong>Thank You!</strong> Your message has been sent.
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/amy_thea_boutique/"><i data-feather="instagram"></i></a>
+        <a href="https://wa.me/6281563344345"><i data-feather="phone"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="https://www.instagram.com/dziffa25_/">Sufi Nadziffa</a>. | &copy; 2023</p>
+      </div>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javasrcipt -->
+    <script src="js/script.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
